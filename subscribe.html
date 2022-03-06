@@ -1,0 +1,194 @@
+<html style="font-family: 'Roboto', sans-serif">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <head>
+        <title>Spici Database</title>
+        <link rel="stylesheet" type="text/css" href="https://github.com/yahyamomtaz/Spici-Web/blob/main/subscribe.css"> 
+        <link rel="stylesheet" type="text/css" href="tenta.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    </head>
+</b>
+
+    </div>
+
+<body style="background-color:#D5DBDB">
+    
+    <div class="form-box2">
+
+        <h1 style="font-size:38px"> Company Registration Form</h1>
+
+      <br><br><br>
+
+       
+
+        <div style="text-align: center">
+            <box class="input-box">
+                <input type="text" placeholder="Company Name" name='company_name' required pattern ="[A-Za-z]{2,20}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 2 characters, non numeric, non symbol' : '')">
+            </box>
+            <box class="input-box">
+                <input type="text" placeholder="Company Category" name='company_category' required pattern="[A-Za-z]{2,20}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 2 characters, non numeric, non symbol' : '')">
+            </box>
+        </div>
+
+            <br><br><br>
+
+        <div style="text-align: center">
+            <box class="input-box">
+                <input name="description" type="text" pattern="^\S{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 8 characters.' : ''); if(this.checkValidity()) form.password2.pattern = this.value;" placeholder="Description" required>
+            </box>
+            <box class="input-box">
+                <input  name="contact_person" type="text" pattern="^\S{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Contact Person" required> 
+                
+            </box>
+        </div>
+        <br><br><br>
+
+         <div style="text-align: center">
+            <box class="input-box">
+                <input type="text" placeholder="Location" name ='location' onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Mandatory field' : '')">
+            </box>     
+
+            <box class="input-box">
+                <input type="text" required placeholder="Website" name="website" pattern="([A-z0-9À-ž\s]){2,}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 2 characters' : '')" >
+            </box>
+        </div>
+
+            <br><br><br>
+
+        <div style="text-align: center">
+            <box class="input-box">
+                <input type="email"  placeholder="Email" name ='email'>
+            </box>
+
+        <box class="input-box">
+                <input type="text" placeholder="Phone Number" required name="phone_num" pattern="([0-9]{5,})" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 2 numbers' : '')" >
+            </box>
+        </div>
+
+
+        <br><br><br>
+
+        <div style="text-align: center">
+            <box class="input-box">
+                <input type="text" required placeholder="Country" name='country' pattern = "([A-z0-9À-ž\s]){2,}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 2 characters':'')">
+            </box>
+            <box class="input-box">
+                <input type="text" required placeholder="ID" name ='id' pattern = "([A-z0-9À-ž\s]){5,}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 5 characters' : '')">
+            </box>
+        </div>
+
+            <br><br><br>
+
+        <div style="text-align: center">
+            <box class="input-box"> 
+                <input type="text" placeholder="Participant 1" name ='participant1' onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Mandatory field' : '')">
+            </box>
+            <box class="input-box">
+                <input type="text" required placeholder="Participant 2" name="participant2" pattern="([A-z0-9À-ž\s]){2,}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 2 characters' : '')" >
+            </box>
+        </div>
+
+            <br><br><br>
+        
+ <form  action="/action_page.php" style="text-align:center">
+  <input class="button" type="file" name="filename">
+  <input class="button" type="submit">
+</form>
+
+        
+
+        <div id='menubar1' style="text-align:center">
+            <a><input class="button" type= "submit" value= "Register"></b></a>
+
+            <br><br>
+        </div>
+        
+</form>
+
+
+</body>
+</html>
+
+
+<script>
+    function MostraPass() {
+        var x = document.getElementById("password1");
+    if (x.type === "password") {
+    x.type = "text";
+    } else {
+    x.type = "password";
+    }}
+    function MostraVerify() {
+        var x = document.getElementById("password2");
+    if (x.type === "password") {
+    x.type = "text";
+    } else {
+    x.type = "password";
+    }}
+</script>
+
+
+<script type = "text/javascript">  
+
+    function show() {
+  var x = document.getElementById("CompanyDetails");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+</script>  
+
+
+
+<script type = "text/javascript">  
+
+    function show2() {
+  var x = document.getElementById("PersonalDetails");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+</script>  
+
+<script>
+window.onload = function() {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+
+};
+</script>
+
+
+
+<style>
+    .fb9 {
+      border: 1px solid #3366FF;
+      background-color: #B3C6FF;
+      width:150px;
+      height:30px;
+    }
+
+    input:invalid:focus {
+      border-bottom: 2px solid red;
+    }
+    
+    input:valid:focus {
+        border-bottom: 2px solid green
+    }
+
+</style>
