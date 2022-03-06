@@ -19,7 +19,7 @@ body {
 
 .logged-in-background{ 
 
-  background-image: url(https://www.em-normandie.com/sites/default/files/2018-09/campania_na_napoli_polo_di_san_giovanni_a_teduccio_0021.jpg);
+  background-color: gray;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
