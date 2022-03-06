@@ -15,11 +15,12 @@ body {
   background-position:center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color:#D5DBDB;
 }
 
 .logged-in-background{ 
 
-  background-color: #D5DBDB;
+  background-color:#D5DBDB;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
